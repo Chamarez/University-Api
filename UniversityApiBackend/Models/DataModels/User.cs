@@ -1,22 +1,21 @@
 ﻿using Microsoft.Build.Framework;
 using System.ComponentModel.DataAnnotations;
-using UniversityApiBackend.Models.DataModels;
 using RequiredAttribute = System.ComponentModel.DataAnnotations.RequiredAttribute;
 
-namespace UniversityApiBackend.Models
+namespace UniversityApiBackend.Models.DataModels
 {
     public class User : BaseEntity
     {
         [Required, StringLength(50)]
-        public string Name { get; set; } = String.Empty;
+        public string Name { get; set; } = string.Empty;
 
         [Required, StringLength(50)]
-        public string LastName { get; set; } = String.Empty;
+        public string LastName { get; set; } = string.Empty;
 
         [Required, EmailAddress]
-        public string Email { get; set; } = String.Empty;
+        public string Email { get; set; } = string.Empty;
         [Required]
-        public string Password { get; set; } = String.Empty;
+        public string Password { get; set; } = string.Empty;
 
     }
 }
