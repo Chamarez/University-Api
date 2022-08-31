@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityApiBackend", "UniversityApiBackend\UniversityApiBackend.csproj", "{DB8F2530-A34C-45E5-8CD5-F618C34337F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniversityApiBackend", "UniversityApiBackend\UniversityApiBackend.csproj", "{DB8F2530-A34C-45E5-8CD5-F618C34337F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqSnippets", "LinqSnippets\LinqSnippets.csproj", "{956375BE-4A5D-4981-990E-6B3DB07EF804}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{DB8F2530-A34C-45E5-8CD5-F618C34337F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB8F2530-A34C-45E5-8CD5-F618C34337F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB8F2530-A34C-45E5-8CD5-F618C34337F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{956375BE-4A5D-4981-990E-6B3DB07EF804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{956375BE-4A5D-4981-990E-6B3DB07EF804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{956375BE-4A5D-4981-990E-6B3DB07EF804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{956375BE-4A5D-4981-990E-6B3DB07EF804}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
