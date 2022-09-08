@@ -6,7 +6,14 @@ var builder = WebApplication.CreateBuilder(args);
 
 const string CONNECTION_NAME = "UniversityDB";
 var connectionString = builder.Configuration.GetConnectionString(CONNECTION_NAME); 
-builder.Services.AddDbContext<UniversityDBContext>(options=> options.UseSqlServer(connectionString));  
+builder.Services.AddDbContext<UniversityDBContext>(options=> options.UseSqlServer(connectionString));
+
+
+//Add service of JWt Autorization
+//TODO:
+//builder.Services.AddJwtTokenServices(builder.Configuration);
+
+
 
 // Add services to the container.
 
@@ -17,6 +24,8 @@ builder.Services.AddScoped<IStudentService, StudentService>();
 
 
 builder.Services.AddEndpointsApiExplorer();
+
+//TODO: Config Swagger to take care of Autorization of jwt
 builder.Services.AddSwaggerGen();
 
 //Cors
